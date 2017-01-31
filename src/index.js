@@ -11,23 +11,22 @@ import Meter from 'grommet/components/Meter';
 import Title from 'grommet/components/Title';
 import Value from 'grommet/components/Value';
 
+import FooterComponent from './components/FooterComponent';
+import CarouselComponent from './components/CarouselComponent';
+import AwesomeComponent from './components/AwesomeComponent'
+
 class Main extends Component {
   render () {
     return (
       <App centered={false}>
         <Header direction="row" justify="between" large={true}
           pad={{horizontal: 'medium'}}>
-          <Title>Grommet standalone</Title>
+          <Title>Juhani Lavonen</Title>
         </Header>
         <Box pad='medium'>
-          <Meter value={40} />
+          <CarouselComponent/>
         </Box>
-        <Footer primary={true} appCentered={true} direction="column"
-          align="center" pad="small" colorIndex="grey-1">
-          <p>
-            Build your ideas with <a href="http://grommet.io" target="_blank">Grommet</a>!
-          </p>
-        </Footer>
+        <FooterComponent />
       </App>
     );
   }
